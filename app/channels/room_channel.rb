@@ -1,6 +1,7 @@
 class RoomChannel< ApplicationCable::Channel
 
   def subscribed
+    # byebug
     room = Room.first #find params[:room]
     stream_for room
     # or
